@@ -29,17 +29,29 @@ Output:
 
 
 Example:
+
     import scipy.io
+    
     import matplotlib.pyplot as plt
+    
     import time
+    
     import math
+    
     from numpy import linalg as LA
+    
     import numpy as np
+    
     import gurobipy as gp
+    
     from gurobipy import GRB
+    
     from sklearn.utils.extmath import randomized_svd
     
     M = scipy.io.loadmat('example.mat')
+    
     A= M['A']
+    
     r = 10
+    
     (list_g,time_FV) = CuttingPlane(A,r) 
